@@ -8,4 +8,22 @@ button{
    cursor: pointer;
 }
 
+.divBar{
+   border: 2px solid teal;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 15px;
+   margin: 10px;
+}
+
+.divBar button{
+   width: 70px;
+   height: 30px;
+}
+
+.h1{
+   text-align: center;
+}
+
 
