@@ -1,0 +1,14 @@
+.myButton{
+   font-size: 14px;
+   padding: 5px 15px;
+   color: teal;
+   background: transparent;
+   border: 1px solid teal;
+   cursor: pointer;
+   border-radius: 5px;
+   transition: .3s;
+}
+
+.myButton:hover{
+   background: rgba(0, 0, 0, .1)
+}

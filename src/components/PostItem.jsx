@@ -1,12 +1,12 @@
 import React from 'react';
 import Banner from './Banner';
 
-const PostItem = ({ posts, tittle }) => {
+const PostItem = ({ remov, posts, title }) => {
    return (
       <div>
-         <h1 className='h1'>{tittle}</h1>
-         {posts.map(post =>
-            <Banner post={post} key={post.id} />
+         <h1 className='h1'>{title}</h1>
+         {posts.map((posts, index) =>
+            <Banner remov={remov} number={index + 1} post={posts} key={posts.id} />
          )}
       </div>
    );
