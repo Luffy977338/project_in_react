@@ -4,6 +4,7 @@ body{
    font-family: 'Helvetica', sans-serif;
    background: #F5F1EE;
    padding: 10px 50px;
+   margin: 0;
 }
 
 button {
@@ -14,9 +15,8 @@ button {
    border: 2px solid #5F50A9;
    display: flex;
    justify-content: space-between;
-   align-items: center;
    padding: 15px 30px;
-   margin: 10px;
+   margin: 20px 0 0 0;
    border-radius: 15px;
    color: #9652C2;
 }
@@ -26,30 +26,38 @@ button {
    height: 30px;
 }
 
+.postTime {
+   font-size: 14px;
+   margin: 20px 0 0 0;
+   text-align: center;
+}
+
+.divTimeSpace {
+   margin-top: 40px;
+}
+
 .h1 {
    text-align: center;
    font-size: 38px;
    margin: 30px 0 10px 0;
 }
 
-form {
+.formDiv{
    text-align: center;
 }
 
-form div {
+.formInputs {
    display: flex;
    flex-direction: column;
    align-items: center;
 }
 
 .elmNotFound {
-   text-align: center;
+   display: grid;
    font-size: 30px;
    opacity: .5;
-}
-
-.elmNotFound:nth-child(2) {
-   margin-top: 230px;
+   height: 500px;
+   place-items: center;
 }
 
 .divSelected{
@@ -58,7 +66,7 @@ form div {
    margin-bottom: 40px;
 }
 
-.divPostItem {
+.divPostTitle {
    text-align: center;
 }
 

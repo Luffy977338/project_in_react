@@ -18,9 +18,10 @@ const PostFilter = ({ filter, setFilter }) => {
             onChange={selectedSort => setFilter({ ...filter, sort: selectedSort })}
             options={[
                { value: 'title', name: 'by name' },
-               { value: 'body', name: 'by description' }
+               { value: 'body', name: 'by description' },
+               { value: 'time_as', name: 'by time (old)', key: Date.now }
             ]}
-            defaultValue={'by time'}
+            defaultValue={'by time (new)'}
          />
       </div>
    );

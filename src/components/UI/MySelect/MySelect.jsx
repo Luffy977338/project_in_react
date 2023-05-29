@@ -8,13 +8,13 @@ const MySelect = ({ options, defaultValue, value, onChange }) => {
          Sort
          <select value={value} onChange={event => onChange(event.target.value)} className={classes.selectValue} >
 
-            <option disabled value="by time">{defaultValue}</option>
-
             {options.map(option =>
                <option key={option.value} value={option.value}>
                   {option.name}
                </option>
             )}
+
+            <option selected key={Date.now()} value="time_des">{defaultValue} </option>
 
          </select>
       </div>

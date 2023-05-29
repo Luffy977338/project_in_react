@@ -4,7 +4,6 @@ import MyInput from './UI/inputs/MyInput';
 
 const FormItem = ({ create }) => {
    const [posts, setPosts] = useState({ title: '', body: '' })
-
    const addNewPost = (e) => {
       e.preventDefault()
       const newPost = { ...posts, id: Date.now() }
@@ -16,25 +15,28 @@ const FormItem = ({ create }) => {
       }
    }
 
+
    return (
       <form>
-         <div>
-            <MyInput
-               type="text"
-               placeholder='Post name'
-               value={posts.title}
-               onChange={e => setPosts({ ...posts, title: e.target.value })}
-            />
+         <div className='formDiv'>
+            <div className='formInputs'>
+               <MyInput
+                  type="text"
+                  placeholder='Post name'
+                  value={posts.title}
+                  onChange={e => setPosts({ ...posts, title: e.target.value })}
+               />
 
-            <MyInput
-               type="text"
-               placeholder='Post description'
-               value={posts.body}
-               onChange={e => setPosts({ ...posts, body: e.target.value })}
-            />
+               <MyInput
+                  type="text"
+                  placeholder='Post description'
+                  value={posts.body}
+                  onChange={e => setPosts({ ...posts, body: e.target.value })}
+               />
+            </div>
+
+            <MyButton onClick={addNewPost}>Create</MyButton>
          </div>
-
-         <MyButton onClick={addNewPost}>Create</MyButton>
 
       </form>
    );
