@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import './App.css'
 import PostItem from './components/PostItem';
 import FormItem from './components/FormItem';
-import PostNotFound from './components/PostNotFound';
+import MyInput from './components/UI/inputs/MyInput';
 
 
 
@@ -20,10 +20,7 @@ function App() {
    return (
       <div className="App">
          <FormItem create={createPost} />
-         {def.length !== 0
-            ? <PostItem remov={removePost} posts={def} title={'Post list'} />
-            : <PostNotFound title={'Post list'} />
-         }
+         <PostItem remov={removePost} state={setDef} posts={def} title={'Posts list'} />
       </div>
    );
 }

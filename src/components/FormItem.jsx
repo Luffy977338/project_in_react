@@ -8,9 +8,12 @@ const FormItem = ({ create }) => {
    const addNewPost = (e) => {
       e.preventDefault()
       const newPost = { ...posts, id: Date.now() }
-      create(newPost)
-      setPosts({ title: '', body: '' })
-      console.log(posts)
+      if (posts.title === '' || posts.body === '') {
+         return
+      } else {
+         create(newPost)
+         setPosts({ title: '', body: '' })
+      }
    }
 
    return (

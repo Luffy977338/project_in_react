@@ -1,9 +1,9 @@
 .myButton{
    font-size: 14px;
    padding: 5px 15px;
-   color: teal;
-   background: transparent;
-   border: 1px solid teal;
+   color: #9652C2;
+   background: #F5F1EE;
+   border: 1px solid #5F50A9;
    cursor: pointer;
    border-radius: 5px;
    transition: .3s;

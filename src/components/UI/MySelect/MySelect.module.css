@@ -1,0 +1,14 @@
+.selectValue {
+   margin-left: 15px;
+   font-size: 14px;
+   padding: 2px;
+   border-radius: 5px;
+   width: 120px;
+   border: 1px solid #5F50A9;
+   color: #9652C2;
+   background: #F5F1EE;
+}
+
+.selectValue:focus {
+   outline: none;
+}
